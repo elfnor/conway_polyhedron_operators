@@ -2,7 +2,7 @@
 in iterations s d=20 n=1
 in scale_factor s d=0.1 n=1
 in verts_in      v d=[] n=1
-in faces_in         v d=[] n=1
+in faces_in         s d=[] n=1
 out verts_out     v
 """
 

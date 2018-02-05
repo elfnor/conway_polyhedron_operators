@@ -2,7 +2,7 @@
 in dummy  s
 enum = tetra octa cube dodeca icosa
 out vertices      v
-out faces         v 
+out faces         s 
 """
 
 plato = {'tetra': "4",'cube': '6', 'octa': '8', 'dodeca': '12', 'icosa': '20'}

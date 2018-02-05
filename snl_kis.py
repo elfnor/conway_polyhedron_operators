@@ -1,9 +1,9 @@
 """
 in height        s d=0.1 n=1
 in verts_in      v d=[] n=1
-in faces_in         v d=[] n=1
+in faces_in         s d=[] n=1
 out verts_out     v
-out faces_out        v 
+out faces_out        s 
 """
 
 from conway import kis 
