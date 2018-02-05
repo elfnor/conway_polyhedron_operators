@@ -8,7 +8,7 @@ These are some high level comments on the code in *conway.py* which implements t
 
 ### Mesh Representation
 
-The basic structure used to encode a mesh is the face-vertex representation. A vertex is represented by a list of three coordinates (x, y, z).  A mesh will have a list of vertices in no particular order.  The faces are a list of the index of the vertices in the face in counter-clockwise order. A mesh will haves a list of faces, again in particular order. Each Conway operator has a list of vertices and a list of faces as input and output.
+The basic structure used to encode a mesh is the face-vertex representation. A vertex is represented by a list of three coordinates (x, y, z).  A mesh will have a list of vertices in no particular order.  The faces are a list of the index of the vertices in the face in counter-clockwise order. A mesh will haves a list of faces, again in no particular order. Each Conway operator has a list of vertices and a list of faces as input and output.
 
 Internally the code uses what I've called a flag-tags representation. This is partly borrowed from [Levskaya's coffeescript code](https://github.com/levskaya/polyhedronisme/blob/master/topo_operators.coffee)  During the application of an operator to a mesh the vertices and faces of the mesh are created step by step. Each newly created face and vertex is given a string "tag" that uniquely identifies it. This is more versatile than referring directly to the index of a vertex in the vertices list as it allows you to refer to new vertices by their position in the mesh structure before they are created and before you know their index number.
 
