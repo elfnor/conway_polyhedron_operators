@@ -6,7 +6,8 @@ out verts_out     v
 out faces_out        s
 """
 
-import conway
+import bpy
+conway = bpy.data.texts["conway.py"].as_module()
 
 def ui(self, context, layout):
     layout.prop(self, 'custom_enum', expand=False)

@@ -1,5 +1,7 @@
 # Conway Operators in python
 
+Updated to Blender 2.83
+
 [Conway Polyhedra](https://en.wikipedia.org/wiki/Conway_polyhedron_notation) are formed by applying various operators to a seed polyhedron such as one of the platonic solids.
 
 from [Wikipedia](https://en.wikipedia.org/wiki/Conway_polyhedron_notation)

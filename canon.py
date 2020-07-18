@@ -11,7 +11,8 @@ This canonical form of a polyhedron is where the verticies of the polyhedron are
 
 import copy
 import mathutils
-import conway as cw
+import bpy
+cw = bpy.data.texts["conway.py"].as_module()
 
 
 def tangentify(verts, faces, scale):
